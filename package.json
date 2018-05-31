@@ -1,6 +1,9 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
+  "scripts": {
+    "start": "concurrently \"tsc -w\" \"exp start\" -k"
+  },
   "dependencies": {
     "expo": "^27.0.1",
     "react": "16.3.1",
@@ -9,6 +12,7 @@
   "devDependencies": {
     "@types/react": "^16.3.14",
     "@types/react-native": "^0.55.15",
+    "concurrently": "^3.5.1",
     "typescript": "^2.8.3"
   }
 }
